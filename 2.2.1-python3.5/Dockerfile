@@ -7,6 +7,7 @@ ENV GDAL_VERSION_PYTHON=2.2.1
 RUN apt-get update && \
     apt-get -y install \
         wget \
+        apt-utils \
         libcurl4-openssl-dev \
         build-essential \
         libpq-dev \
@@ -20,6 +21,7 @@ RUN apt-get update && \
         libpoppler-dev \
         libsqlite3-dev \
         libspatialite-dev \
+        libsasl2-dev \
         python3 \
         python3-dev \
         python3-numpy
